@@ -1,6 +1,6 @@
 import {deposit, withdraw, transfer} from './Bank.js'
 
-describe('Bank case Deposit', () =>{
+describe('Bank case Deposit', () => {
   it('throws when product is not an object', () => {
   	expect( () => deposit(null) ).toThrow();
   });
@@ -15,7 +15,7 @@ describe('Bank case Deposit', () =>{
   });
 })
 
-describe('Bank case withdraw', () =>{
+describe('Bank case withdraw', () => {
   it('throws when product is not an object', () => {
   	expect( () => withdraw(null) ).toThrow();
   });
@@ -27,5 +27,14 @@ describe('Bank case withdraw', () =>{
     let kalle = { name: 'Kalle', balance: 150 };
     withdraw(kalle,140);
     expect(kalle.balance).toBe(10);
+  });
+})
+
+describe('Bank case transfer', () => {
+  it('transfer case send and receive amount', () => {
+    let bella = { name: 'Bella', balance: 1200 };
+    let kalle = { name: 'Kalle', balance: 150 };
+    transfer(kalle, bella, 100);
+    expect(bella.balance).toBe(1300);
   });
 })
