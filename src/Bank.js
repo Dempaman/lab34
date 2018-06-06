@@ -47,12 +47,8 @@ function withdraw(account, amount) {
 }
 //transfer
 function transfer(accountSender, accountReceiver, amount) {
-    if( (typeof accountReceiver.balance) !== 'number' || (typeof accountSender.balance) !== 'number'){
-      throw new Error('');
-    }else{
     withdraw(accountSender, amount)
     deposit(accountReceiver, amount)
-    }
 }
 
 export {deposit, withdraw, transfer}
