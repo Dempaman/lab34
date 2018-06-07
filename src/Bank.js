@@ -10,7 +10,7 @@ function deposit(account, amount) {
   if((typeof amount) !== 'number'){
     throw new Error('To low amount or wrong type of number')
   }
-  if(amount <= 0){
+  if(amount < 1){
     throw new Error('no amount to deposit')
   }
   else if(!account.name){
@@ -30,7 +30,7 @@ function withdraw(account, amount) {
   if((typeof amount) !== 'number'){
     throw new Error('To low amount or wrong type of number')
   }
-  if(amount <= 0){
+  if(amount < 1){
     throw new Error('no amount to withdraw')
   }
   else if(account.balance < amount){
