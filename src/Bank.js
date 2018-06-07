@@ -8,10 +8,16 @@ function deposit(account, amount) {
     throw new Error('Wrong account or amount')
   }
   if((typeof amount) !== 'number'){
-    throw new Error('To low amount or wrong type of number')
+    throw new Error('wrong type of number')
+  }
+  if((typeof amount) === 'string') {
+    throw new Error('amount is not allowed to be type string')
   }
   if(amount < 1){
     throw new Error('no amount to deposit')
+  }
+  else if(account.balance < amount){
+    throw new Error('account balance is to low')
   }
   else if(!account.name){
     throw new Error('Missing name in object')
@@ -24,14 +30,20 @@ function deposit(account, amount) {
 }
 //withdraw
 function withdraw(account, amount) {
+  if((typeof account ) === 'undefined'){
+    throw new Error('account does not excist')
+  }
   if( (typeof account) !== 'object' || !account){
     throw new Error('Wrong account or amount')
   }
   if((typeof amount) !== 'number'){
-    throw new Error('To low amount or wrong type of number')
+    throw new Error('wrong type of number')
+  }
+  if((typeof amount) === 'string') {
+    throw new Error('amount is not allowed to be type string')
   }
   if(amount < 1){
-    throw new Error('no amount to withdraw')
+    throw new Error('amount is to low to withdraw')
   }
   else if(account.balance < amount){
     throw new Error('account balance is to low')

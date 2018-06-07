@@ -14,13 +14,12 @@ describe('Bank case Deposit', () => {
     let kalle = { name: 'Kalle', balance: 150 };
     deposit(kalle,110);
     expect(kalle.balance).toBe(260);
-
-    expect( () => deposit(kalle, 0)).toThrow(); // Deposit amount = 0
-    expect( () => deposit(kalle, null)).toThrow(); // Deposit null
-    expect( () => deposit(kalle, undefined)).toThrow(); // Deposit undefined
-    expect( () => deposit(kalle, "hej")).toThrow(); // Deposit a string
-    expect( () => deposit(annika, 300)).toThrow(); // Deposit money from non-excisting account
-
+    expect( () => withdraw(kalle, 0)).toThrow(); // withdraw amount = 0
+    expect( () => withdraw(annika, 50)).toThrow(); // withdraw non-excisting account
+  });
+  it('throws if there is not enough money in balance', ()=> {
+    let kalle = { name: 'Kalle', balance: 150 };
+    expect( () => deposit(kalle, 300)).toThrow(); // withdraw more money than in balance
   });
 })
 
@@ -36,18 +35,15 @@ describe('Bank case withdraw', () => {
   });
   it('withdraw case', () =>{
     let kalle = { name: 'Kalle', balance: 150 };
-    withdraw(kalle,140);
+    withdraw(kalle, 140);
     expect(kalle.balance).toBe(10); // withdraw money
-
-
-
-    expect( () => withdraw(kalle, 300)).toThrow(); // withdraw more money than in balance
     expect( () => withdraw(kalle, 0)).toThrow(); // withdraw amount = 0
-    expect( () => withdraw(kalle, undefined)).toThrow(); // withdraw undefined
-    expect( () => withdraw(kalle, null)).toThrow(); // withdraw null
-    expect( () => withdraw(kalle, "hej")).toThrow(); // withdraw a string
-    expect( () => withdraw(annika, 300)).toThrow(); // withdraw money from non-excisting account
+    expect( () => withdraw(annika, 50)).toThrow(); // withdraw non-excisting account
   });
+  it('throws if there is not enough money in balance', ()=> {
+    let kalle = { name: 'Kalle', balance: 150 };
+    expect( () => withdraw(kalle, 300)).toThrow(); // withdraw more money than in balance
+  })
 })
 
 describe('Bank case transfer', () => {
