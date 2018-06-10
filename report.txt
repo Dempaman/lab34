@@ -1,71 +1,71 @@
 Temperaturomvandling Uppgift:
-Fråga 1
-Testfall som skiljer sig åt i vår laboration:
-Här har vi testat i princip samma saker. Erik och Andreas har varit lite mer produktiva och testat värdena “true” och “false”. 
-Dessa värden blir NaN i deras test.
+FrÃ¥ga 1
+Testfall som skiljer sig Ã¥t i vÃ¥r laboration:
+HÃ¤r har vi testat i princip samma saker. Erik och Andreas har varit lite mer produktiva och testat vÃ¤rdena â€œtrueâ€ och â€œfalseâ€. 
+Dessa vÃ¤rden blir NaN i deras test.
 
-Fråga 2
-Vi testade inte värdena “true” och “false” för att vi inte hade med dessa i våran lista av nedskrivna exempel som vi skulle testa. 
-Ibland så kanske man ska tänka utanför “ramarna” och testa lite mer än vad som behövs för att vara säker på att allt stämmer. 
-Ta en extra koll och skriv ner ytterligare testfall som kan behövas.
+FrÃ¥ga 2
+Vi testade inte vÃ¤rdena â€œtrueâ€ och â€œfalseâ€ fÃ¶r att vi inte hade med dessa i vÃ¥ran lista av nedskrivna exempel som vi skulle testa. 
+Ibland sÃ¥ kanske man ska tÃ¤nka utanfÃ¶r â€œramarnaâ€ och testa lite mer Ã¤n vad som behÃ¶vs fÃ¶r att vara sÃ¤ker pÃ¥ att allt stÃ¤mmer. 
+Ta en extra koll och skriv ner ytterligare testfall som kan behÃ¶vas.
 
-Fråga 3
-De viktigaste testfallet är kollen om gradantalet celsius verkligen konverteras om rätt till fahrenheit. Att beräkningen av formeln blir korrekt.
-Ett annat viktigt testfall är den absoluta nollpunkten, dvs temperaturen får inte understiga -273.15.
-Sedan är det viktigt att  testa om det vi skickar in i våran funktion verkligen är ett nummer och ingenting annan. 
-Om det inte är ett nummer så kommer funktionen returnera Not A Number.
+FrÃ¥ga 3
+De viktigaste testfallet Ã¤r kollen om gradantalet celsius verkligen konverteras om rÃ¤tt till fahrenheit. Att berÃ¤kningen av formeln blir korrekt.
+Ett annat viktigt testfall Ã¤r den absoluta nollpunkten, dvs temperaturen fÃ¥r inte understiga -273.15.
+Sedan Ã¤r det viktigt att  testa om det vi skickar in i vÃ¥ran funktion verkligen Ã¤r ett nummer och ingenting annan. 
+Om det inte Ã¤r ett nummer sÃ¥ kommer funktionen returnera Not A Number.
 
 
-Körkort Uppgift:
-Fråga 1
-Testfall som skiljer sig åt i vår laboration:
-Även i denna uppgift så har Erik och Andreas varit med noggrann med att göra fler testfall. 
-Dom har testat otillåtna och tillåtna värden på de olika licenstyper, medans vi har bara testat tillåtna värden.
-Dom har även testat om ålder är en sträng eller inte, vilket vi har missat. Dom hade även tänkt på att testa små och stora bokstäver. Detta var något som vi också missade.
+KÃ¶rkort Uppgift:
+FrÃ¥ga 1
+Testfall som skiljer sig Ã¥t i vÃ¥r laboration:
+Ã„ven i denna uppgift sÃ¥ har Erik och Andreas varit med noggrann med att gÃ¶ra fler testfall. 
+Dom har testat otillÃ¥tna och tillÃ¥tna vÃ¤rden pÃ¥ de olika licenstyper, medans vi har bara testat tillÃ¥tna vÃ¤rden.
+Dom har Ã¤ven testat om Ã¥lder Ã¤r en strÃ¤ng eller inte, vilket vi har missat. Dom hade Ã¤ven tÃ¤nkt pÃ¥ att testa smÃ¥ och stora bokstÃ¤ver. Detta var nÃ¥got som vi ocksÃ¥ missade.
 
-Fråga 2
-Vi testade enbart tillåtna värden på licenstyp och ålder i denna uppgift. Detta för att vi var noga med att följa kravspecen. 
-Vi Höll oss återigen inom ramen i vad som behövdes göras och tänkte inte på att testa saker som inte stod med i våran kravspec. 
+FrÃ¥ga 2
+Vi testade enbart tillÃ¥tna vÃ¤rden pÃ¥ licenstyp och Ã¥lder i denna uppgift. Detta fÃ¶r att vi var noga med att fÃ¶lja kravspecen. 
+Vi hÃ¶ll oss inom ramen i vad som behÃ¶vdes gÃ¶ras och tÃ¤nkte inte pÃ¥ att testa saker som inte stod med i vÃ¥ran kravspec. 
 
-Återigen så behöver vi lägga ner extra tid på att skriva ner testfall som inte står med i kravspecen för att göra koden så “buggfri” som möjligt.
+Ã…terigen sÃ¥ behÃ¶ver vi lÃ¤gga ner extra tid pÃ¥ att skriva ner testfall som inte stÃ¥r med i kravspecen fÃ¶r att gÃ¶ra koden sÃ¥ â€œbuggfriâ€ som mÃ¶jligt.
 
-Fråga 3
-De viktigaste testen för denna uppgift var att testa om licenstyp matchade åldern.
-Dvs om det var en godkänd ålder för respektive  licenstyp. 
+FrÃ¥ga 3
+De viktigaste testen fÃ¶r denna uppgift var att testa om licenstyp matchade Ã¥ldern.
+Dvs om det var en godkÃ¤nd Ã¥lder fÃ¶r respektive  licenstyp. 
 
 
 Bank Uppgift:
-Fråga 1
+FrÃ¥ga 1
 Transfer.
-    Testfall som vi använt men Erik och Andreas ej har: 
-	Testar om man skickar mer pengar än vad som på avsändarens konto så ska det kastas ett error. 
-	De har dock en if-sats som kastar ett error som detta skulle hända.
-	Kollar ifall balance stämmer på det kontot som mottar värdet. De har dock en if-sats som kastar ett error som detta skulle hända
-Testfall som Erik och Andreas använt som vi inte har:
-	Testar ifall funktionen kastar ett error om man skickar ett negativt värde (Negativt värde på “balance”). 
-	Vår funktion kastar ett error ifall detta skulle inträffa men vi har inte gjort ett testfall.
+    Testfall som vi anvÃ¤nt men Erik och Andreas ej har: 
+	Testar om man skickar mer pengar Ã¤n vad som pÃ¥ avsÃ¤ndarens konto sÃ¥ ska det kastas ett error. 
+	De har dock en if-sats som kastar ett error som detta skulle hÃ¤nda.
+	Kollar ifall balance stÃ¤mmer pÃ¥ det kontot som mottar vÃ¤rdet. De har dock en if-sats som kastar ett error som detta skulle hÃ¤nda
+Testfall som Erik och Andreas anvÃ¤nt som vi inte har:
+	Testar ifall funktionen kastar ett error om man skickar ett negativt vÃ¤rde (Negativt vÃ¤rde pÃ¥ â€œbalanceâ€). 
+	VÃ¥r funktion kastar ett error ifall detta skulle intrÃ¤ffa men vi har inte gjort ett testfall.
 
-Withdraw & Deposit (Samma tester använda fast för deposit som inte är likadana)
-    Testfall som vi använt men Erik och Andreas ej har: 
-	Kastar ett error om det angivna kontot inte är ett objekt. De har dock en if-sats som kastar ett error om detta skulle hända.
-	Kastar ett error om det angivna kontot saknar “balance” och “namn”. De har dock en if-sats som kaster ett error om detta skulle hända.
-	Testar ifall det blir rätt balance på kontot efter man kört funktionen withdraw/deposit .
-	Kastar ett error ifall man försöker ta ut/sätta in något när amount har värdet 0. De har dock en if-sats som kastar ett error om detta skulle hända.
+Withdraw & Deposit (Samma tester anvÃ¤nda fast fÃ¶r deposit som inte Ã¤r likadana)
+    Testfall som vi anvÃ¤nt men Erik och Andreas ej har: 
+	Kastar ett error om det angivna kontot inte Ã¤r ett objekt. De har dock en if-sats som kastar ett error om detta skulle hÃ¤nda.
+	Kastar ett error om det angivna kontot saknar â€œbalanceâ€ och â€œnamnâ€. De har dock en if-sats som kaster ett error om detta skulle hÃ¤nda.
+	Testar ifall det blir rÃ¤tt balance pÃ¥ kontot efter man kÃ¶rt funktionen withdraw/deposit .
+	Kastar ett error ifall man fÃ¶rsÃ¶ker ta ut/sÃ¤tta in nÃ¥got nÃ¤r amount har vÃ¤rdet 0. De har dock en if-sats som kastar ett error om detta skulle hÃ¤nda.
 
-    Testfall som Erik och Andreas använt som vi inte har:
-	Testar ifall funktionen kastar ett error om amount är ett negativt värde. Vår funktion kastar ett error ifall detta skulle inträffa men vi har inte gjort ett testfall.
-	Testfall för att kolla om funktionen kastar ett error när man försöker köra funktionen med ett värde som inte är ett number.
+    Testfall som Erik och Andreas anvÃ¤nt som vi inte har:
+	Testar ifall funktionen kastar ett error om amount Ã¤r ett negativt vÃ¤rde. VÃ¥r funktion kastar ett error ifall detta skulle intrÃ¤ffa men vi har inte gjort ett testfall.
+	Testfall fÃ¶r att kolla om funktionen kastar ett error nÃ¤r man fÃ¶rsÃ¶ker kÃ¶ra funktionen med ett vÃ¤rde som inte Ã¤r ett number.
 
-Fråga 2
-Vi missade simpla men kritiska testfall. Som att t.ex testa med negativa tal och att sätta in eller ta ut med värden som inte var nummer. 
-Det var svårt att ställa om till att utveckla med TDD då vi gärna ville skriva klart funktionen innan när vi fann felen. Detta resulterade i att vi kanske inte tänkte på vissa tester 
-som vi annars hade gjort om vi utvecklade med TDD från start och utgick från att göra en lista med krav som vi skulle följt.
+FrÃ¥ga 2
+Vi missade simpla men kritiska testfall. Som att t.ex testa med negativa tal och att sÃ¤tta in eller ta ut med vÃ¤rden som inte var nummer. 
+Det var svÃ¥rt att stÃ¤lla om till att utveckla med TDD dÃ¥ vi gÃ¤rna ville skriva klart funktionen innan nÃ¤r vi fann felen. Detta resulterade i att vi kanske inte tÃ¤nkte pÃ¥ vissa tester 
+som vi annars hade gjort om vi utvecklade med TDD frÃ¥n start och utgick frÃ¥n att gÃ¶ra en lista med krav som vi skulle fÃ¶ljt.
 
-I framtiden vore det som sagt bra att göra en lista med testfall så det blir struktur och utveckla med red - green - refactor från start. 
+I framtiden vore det som sagt bra att gÃ¶ra en lista med testfall sÃ¥ det blir struktur och utveckla med red - green - refactor frÃ¥n start. 
 
-Fråga 3
-Först och främst testet som kollar ifall balance blir korrekt värde efter att deposit/withdraw funktionen har körts så vi vet att “basfunktionen” klarar testet. 
-Efter det så blir det att bygga på funktionen med gränsvärden och testa dom.
+FrÃ¥ga 3
+FÃ¶rst och frÃ¤mst testet som kollar ifall balance blir korrekt vÃ¤rde efter att deposit/withdraw funktionen har kÃ¶rts sÃ¥ vi vet att â€œbasfunktionenâ€ klarar testet. 
+Efter det sÃ¥ blir det att bygga pÃ¥ funktionen med grÃ¤nsvÃ¤rden och testa dom.
     
 
 
