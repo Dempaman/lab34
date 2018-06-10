@@ -1,0 +1,74 @@
+Temperaturomvandling Uppgift:
+Fråga 1
+Testfall som skiljer sig åt i vår laboration:
+Här har vi testat i princip samma saker. Erik och Andreas har varit lite mer produktiva och testat värdena “true” och “false”. 
+Dessa värden blir NaN i deras test.
+
+Fråga 2
+Vi testade inte värdena “true” och “false” för att vi inte hade med dessa i våran lista av nedskrivna exempel som vi skulle testa. 
+Ibland så kanske man ska tänka utanför “ramarna” och testa lite mer än vad som behövs för att vara säker på att allt stämmer. 
+Ta en extra koll och skriv ner ytterligare testfall som kan behövas.
+
+Fråga 3
+De viktigaste testfallet är kollen om gradantalet celsius verkligen konverteras om rätt till fahrenheit. Att beräkningen av formeln blir korrekt.
+Ett annat viktigt testfall är den absoluta nollpunkten, dvs temperaturen får inte understiga -273.15.
+Sedan är det viktigt att  testa om det vi skickar in i våran funktion verkligen är ett nummer och ingenting annan. 
+Om det inte är ett nummer så kommer funktionen returnera Not A Number.
+
+
+Körkort Uppgift:
+Fråga 1
+Testfall som skiljer sig åt i vår laboration:
+Även i denna uppgift så har Erik och Andreas varit med noggrann med att göra fler testfall. 
+Dom har testat otillåtna och tillåtna värden på de olika licenstyper, medans vi har bara testat tillåtna värden.
+Dom har även testat om ålder är en sträng eller inte, vilket vi har missat. Dom hade även tänkt på att testa små och stora bokstäver. Detta var något som vi också missade.
+
+Fråga 2
+Vi testade enbart tillåtna värden på licenstyp och ålder i denna uppgift. Detta för att vi var noga med att följa kravspecen. 
+Vi Höll oss återigen inom ramen i vad som behövdes göras och tänkte inte på att testa saker som inte stod med i våran kravspec. 
+
+Återigen så behöver vi lägga ner extra tid på att skriva ner testfall som inte står med i kravspecen för att göra koden så “buggfri” som möjligt.
+
+Fråga 3
+De viktigaste testen för denna uppgift var att testa om licenstyp matchade åldern.
+Dvs om det var en godkänd ålder för respektive  licenstyp. 
+
+
+Bank Uppgift:
+Fråga 1
+Transfer.
+    Testfall som vi använt men Erik och Andreas ej har: 
+	Testar om man skickar mer pengar än vad som på avsändarens konto så ska det kastas ett error. 
+	De har dock en if-sats som kastar ett error som detta skulle hända.
+	Kollar ifall balance stämmer på det kontot som mottar värdet. De har dock en if-sats som kastar ett error som detta skulle hända
+Testfall som Erik och Andreas använt som vi inte har:
+	Testar ifall funktionen kastar ett error om man skickar ett negativt värde (Negativt värde på “balance”). 
+	Vår funktion kastar ett error ifall detta skulle inträffa men vi har inte gjort ett testfall.
+
+Withdraw & Deposit (Samma tester använda fast för deposit som inte är likadana)
+    Testfall som vi använt men Erik och Andreas ej har: 
+	Kastar ett error om det angivna kontot inte är ett objekt. De har dock en if-sats som kastar ett error om detta skulle hända.
+	Kastar ett error om det angivna kontot saknar “balance” och “namn”. De har dock en if-sats som kaster ett error om detta skulle hända.
+	Testar ifall det blir rätt balance på kontot efter man kört funktionen withdraw/deposit .
+	Kastar ett error ifall man försöker ta ut/sätta in något när amount har värdet 0. De har dock en if-sats som kastar ett error om detta skulle hända.
+
+    Testfall som Erik och Andreas använt som vi inte har:
+	Testar ifall funktionen kastar ett error om amount är ett negativt värde. Vår funktion kastar ett error ifall detta skulle inträffa men vi har inte gjort ett testfall.
+	Testfall för att kolla om funktionen kastar ett error när man försöker köra funktionen med ett värde som inte är ett number.
+
+Fråga 2
+Vi missade simpla men kritiska testfall. Som att t.ex testa med negativa tal och att sätta in eller ta ut med värden som inte var nummer. 
+Det var svårt att ställa om till att utveckla med TDD då vi gärna ville skriva klart funktionen innan när vi fann felen. Detta resulterade i att vi kanske inte tänkte på vissa tester 
+som vi annars hade gjort om vi utvecklade med TDD från start och utgick från att göra en lista med krav som vi skulle följt.
+
+I framtiden vore det som sagt bra att göra en lista med testfall så det blir struktur och utveckla med red - green - refactor från start. 
+
+Fråga 3
+Först och främst testet som kollar ifall balance blir korrekt värde efter att deposit/withdraw funktionen har körts så vi vet att “basfunktionen” klarar testet. 
+Efter det så blir det att bygga på funktionen med gränsvärden och testa dom.
+    
+
+
+
+
+
