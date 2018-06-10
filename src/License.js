@@ -11,7 +11,7 @@ function canGetLicense(license, age){
   if(getInfo.license !== license || (typeof getInfo.age) !== 'number'){
     throw new Error('Wrong value on ' + license + ' or ' + age);
   }
-  if(getInfo.age <= age && getInfo.license === license){
+  if( 0 <= age &&  age <= 120 && getInfo.age <= age && getInfo.license === license ){
     return true
   }else{
     return false
